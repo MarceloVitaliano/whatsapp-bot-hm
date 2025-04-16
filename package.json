@@ -1,14 +1,18 @@
 {
   "name": "whatsapp-bot-hm",
   "version": "1.0.0",
-  "description": "Bot de WhatsApp para HM Encuadernaciones",
+  "description": "Bot de WhatsApp automático para mensajes diarios",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
+  "keywords": [],
+  "author": "Marcelo Vitaliano",
+  "license": "MIT",
   "dependencies": {
-    "axios": "^1.6.7",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2"
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "node-cron": "^3.0.2",
+    "twilio": "^4.11.0"
   }
 }
