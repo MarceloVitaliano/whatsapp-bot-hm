@@ -66,6 +66,8 @@
     });
 
     form.addEventListener("submit", async (e) => {
+    alert("🧪 Enviando...");
+    console.log("Formulario interceptado correctamente");
       e.preventDefault(); // 💡 Previene recarga de la página
 
       if (!csv.files.length) return alert("Sube un archivo CSV.");
