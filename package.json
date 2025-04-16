@@ -1,18 +1,16 @@
+
 {
   "name": "whatsapp-bot-hm",
   "version": "1.0.0",
-  "description": "Bot de WhatsApp automático para mensajes diarios",
+  "description": "Bot de WhatsApp para recordatorios automáticos",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
   },
-  "keywords": [],
-  "author": "Marcelo Vitaliano",
-  "license": "MIT",
   "dependencies": {
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "node-cron": "^3.0.2",
-    "twilio": "^4.11.0"
+    "twilio": "^4.14.0"
   }
 }

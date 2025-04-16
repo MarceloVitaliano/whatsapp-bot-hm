@@ -1,3 +1,4 @@
+
 const express = require('express');
 const cron = require('node-cron');
 const twilio = require('twilio');
@@ -49,7 +50,7 @@ const enviarMensaje = (hora) => {
 
   client.messages.create({
     from: 'whatsapp:+14155238886',
-    to: 'whatsapp:+528134425657',
+    to: 'whatsapp:+5218134425657',
     body: mensaje
   }).then(() => {
     console.log("✅ Mensaje enviado correctamente.");
@@ -65,14 +66,12 @@ const enviarMensaje = (hora) => {
   });
 });
 
-
-
-// Ruta de prueba para verificar funcionamiento manual
+// Ruta de prueba
 app.get('/prueba', (req, res) => {
   const mensaje = "✅ WhatsApp automático funcionando al 100%";
   client.messages.create({
     from: 'whatsapp:+14155238886',
-    to: 'whatsapp:+528134425657',
+    to: 'whatsapp:+5218134425657',
     body: mensaje
   }).then(() => {
     console.log("✅ Mensaje de prueba enviado correctamente.");
@@ -82,7 +81,6 @@ app.get('/prueba', (req, res) => {
     res.status(500).send("Error al enviar mensaje de prueba.");
   });
 });
-
 
 app.listen(PORT, () => {
   console.log(`Servidor corriendo en puerto ${PORT}`);
